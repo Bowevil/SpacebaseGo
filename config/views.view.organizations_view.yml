@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - group.type.organization_group
-    - system.menu.main
+    - system.menu.organizations
   module:
     - group
 id: organizations_view
@@ -156,7 +156,12 @@ display:
       menu:
         type: normal
         title: Organizations
-        menu_name: main
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: organizations
     cache_metadata:
       max-age: -1
       contexts:

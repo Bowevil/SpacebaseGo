@@ -8,7 +8,7 @@ dependencies:
     - field.storage.user.field_tagline_user
     - field.storage.user.user_picture
     - image.style.thumbnail
-    - system.menu.main
+    - system.menu.people
     - user.role.administrator
     - user.role.anonymous
     - user.role.authenticated
@@ -344,7 +344,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_first_name_user }} {{ field_last_name_user }} '
+            text: '{{ field_first_name_user }} {{ field_last_name_user }}  </br>'
             make_link: false
             path: ''
             absolute: false
@@ -518,7 +518,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_home_location_user_locality }}, {{ field_home_location_user_country_code }}'
+            text: '</br>{{ field_home_location_user_locality }}, {{ field_home_location_user_country_code }}'
             make_link: false
             path: ''
             absolute: false
@@ -661,7 +661,7 @@ display:
         parent: ''
         weight: 0
         context: '0'
-        menu_name: main
+        menu_name: people
       access:
         type: role
         options:

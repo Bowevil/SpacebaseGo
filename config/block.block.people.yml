@@ -1,0 +1,24 @@
+uuid: 7fa8d2d3-e8b7-4373-8083-0eb004592591
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.people
+  module:
+    - system
+  theme:
+    - bootstrap
+id: people
+theme: bootstrap
+region: header
+weight: -9
+provider: null
+plugin: 'system_menu_block:people'
+settings:
+  id: 'system_menu_block:people'
+  label: People
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }
