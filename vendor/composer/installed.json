@@ -7861,60 +7861,6 @@
         }
     },
     {
-        "name": "drupal/migrate_source_csv",
-        "version": "dev-2.x",
-        "version_normalized": "dev-2.x",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupal.org/project/migrate_source_csv",
-            "reference": "1ab62f0b3f86fb78193aa3c96e9a6f846b738e89"
-        },
-        "require": {
-            "drupal/core": "~8.1"
-        },
-        "require-dev": {
-            "mikey179/vfsstream": "~1",
-            "phpunit/phpunit": "~4"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "branch-alias": {
-                "dev-2.x": "2.x-dev"
-            },
-            "drupal": {
-                "version": "8.x-2.0-rc2+2-dev",
-                "datestamp": "1479317639",
-                "security-coverage": {
-                    "status": "not-covered",
-                    "message": "Dev releases are not covered by Drupal security advisories."
-                }
-            }
-        },
-        "installation-source": "source",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Lucas Hedding",
-                "homepage": "https://www.drupal.org/u/heddn",
-                "role": "Maintainer"
-            },
-            {
-                "name": "mikeryan",
-                "homepage": "https://www.drupal.org/user/4420"
-            }
-        ],
-        "description": "CSV source migration.",
-        "homepage": "https://www.drupal.org/project/migrate_source_csv",
-        "support": {
-            "source": "https://cgit.drupalcode.org/migrate_source_csv",
-            "issues": "https://www.drupal.org/project/issues/migrate_source_csv",
-            "irc": "irc://irc.freenode.org/drupal-migrate"
-        }
-    },
-    {
         "name": "drupal/empty_page",
         "version": "1.1.0",
         "version_normalized": "1.1.0.0",
@@ -8044,13 +7990,79 @@
         }
     },
     {
+        "name": "drupal/migrate_source_csv",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/migrate_source_csv",
+            "reference": "8.x-2.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-2.0.zip",
+            "reference": "8.x-2.0",
+            "shasum": "056845ce1679a051733b12576e3204609dce293d"
+        },
+        "require": {
+            "drupal/core": "~8.1"
+        },
+        "require-dev": {
+            "mikey179/vfsstream": "~1",
+            "phpunit/phpunit": "~4"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0",
+                "datestamp": "1479750843",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Lucas Hedding",
+                "homepage": "https://www.drupal.org/u/heddn",
+                "role": "Maintainer"
+            },
+            {
+                "name": "mikeryan",
+                "homepage": "https://www.drupal.org/user/4420"
+            }
+        ],
+        "description": "CSV source migration.",
+        "homepage": "https://www.drupal.org/project/migrate_source_csv",
+        "support": {
+            "source": "https://cgit.drupalcode.org/migrate_source_csv",
+            "issues": "https://www.drupal.org/project/issues/migrate_source_csv",
+            "irc": "irc://irc.freenode.org/drupal-migrate"
+        }
+    },
+    {
         "name": "drupal/migrate_tools",
-        "version": "dev-4.x",
-        "version_normalized": "dev-4.x",
+        "version": "4.0.0-beta2",
+        "version_normalized": "4.0.0.0-beta2",
         "source": {
             "type": "git",
             "url": "https://git.drupal.org/project/migrate_tools",
-            "reference": "ae1b7c2a4b2895125e7e2f8f07f6ffbcaf20c418"
+            "reference": "8.x-4.0-beta2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-4.0-beta2.zip",
+            "reference": "8.x-4.0-beta2",
+            "shasum": "8d7442253e100078e28f18fff062e3431153c0b2"
         },
         "require": {
             "drupal/core": "^8.3",
@@ -8065,16 +8077,11 @@
                 "dev-4.x": "4.x-dev"
             },
             "drupal": {
-                "version": "8.x-4.0-beta1+5-dev",
-                "datestamp": "1510918685",
+                "version": "8.x-4.0-beta2",
+                "datestamp": "1511790485",
                 "security-coverage": {
                     "status": "not-covered",
-                    "message": "Dev releases are not covered by Drupal security advisories."
-                }
-            },
-            "drush": {
-                "services": {
-                    "drush.services.yml": "^9"
+                    "message": "Beta releases are not covered by Drupal security advisories."
                 }
             }
         },
@@ -8098,11 +8105,9 @@
             }
         ],
         "description": "Tools to assist in developing and running migrations.",
-        "homepage": "http://drupal.org/project/migrate_tools",
+        "homepage": "https://www.drupal.org/project/migrate_tools",
         "support": {
-            "source": "http://cgit.drupalcode.org/migrate_tools",
-            "issues": "http://drupal.org/project/migrate_tools",
-            "irc": "irc://irc.freenode.org/drupal-migrate"
+            "source": "http://cgit.drupalcode.org/migrate_tools"
         }
     }
 ]

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba39fa4d37d530e45c4d671fdf5522dc",
+    "content-hash": "665abeae55eedb9015df941a6a91e5fa",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2240,11 +2240,17 @@
         },
         {
             "name": "drupal/migrate_source_csv",
-            "version": "dev-2.x",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_source_csv",
-                "reference": "1ab62f0b3f86fb78193aa3c96e9a6f846b738e89"
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "056845ce1679a051733b12576e3204609dce293d"
             },
             "require": {
                 "drupal/core": "~8.1"
@@ -2259,11 +2265,11 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-rc2+2-dev",
-                    "datestamp": "1479317639",
+                    "version": "8.x-2.0",
+                    "datestamp": "1479750843",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -2288,16 +2294,21 @@
                 "source": "https://cgit.drupalcode.org/migrate_source_csv",
                 "issues": "https://www.drupal.org/project/issues/migrate_source_csv",
                 "irc": "irc://irc.freenode.org/drupal-migrate"
-            },
-            "time": "2016-11-16T17:32:23+00:00"
+            }
         },
         {
             "name": "drupal/migrate_tools",
-            "version": "dev-4.x",
+            "version": "4.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_tools",
-                "reference": "ae1b7c2a4b2895125e7e2f8f07f6ffbcaf20c418"
+                "reference": "8.x-4.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-4.0-beta2.zip",
+                "reference": "8.x-4.0-beta2",
+                "shasum": "8d7442253e100078e28f18fff062e3431153c0b2"
             },
             "require": {
                 "drupal/core": "^8.3",
@@ -2312,16 +2323,11 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-beta1+5-dev",
-                    "datestamp": "1510918685",
+                    "version": "8.x-4.0-beta2",
+                    "datestamp": "1511790485",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2344,13 +2350,10 @@
                 }
             ],
             "description": "Tools to assist in developing and running migrations.",
-            "homepage": "http://drupal.org/project/migrate_tools",
+            "homepage": "https://www.drupal.org/project/migrate_tools",
             "support": {
-                "source": "http://cgit.drupalcode.org/migrate_tools",
-                "issues": "http://drupal.org/project/migrate_tools",
-                "irc": "irc://irc.freenode.org/drupal-migrate"
-            },
-            "time": "2017-12-16T04:04:22+00:00"
+                "source": "http://cgit.drupalcode.org/migrate_tools"
+            }
         },
         {
             "name": "drupal/og",
@@ -7850,8 +7853,6 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "drupal/group": 20,
-        "drupal/migrate_source_csv": 20,
-        "drupal/migrate_tools": 20,
         "drupal/og": 20,
         "drupal/simple_block": 10
     },
