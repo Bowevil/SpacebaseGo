@@ -7859,5 +7859,250 @@
         "support": {
             "source": "http://cgit.drupalcode.org/group"
         }
+    },
+    {
+        "name": "drupal/migrate_source_csv",
+        "version": "dev-2.x",
+        "version_normalized": "dev-2.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/migrate_source_csv",
+            "reference": "1ab62f0b3f86fb78193aa3c96e9a6f846b738e89"
+        },
+        "require": {
+            "drupal/core": "~8.1"
+        },
+        "require-dev": {
+            "mikey179/vfsstream": "~1",
+            "phpunit/phpunit": "~4"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0-rc2+2-dev",
+                "datestamp": "1479317639",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Dev releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Lucas Hedding",
+                "homepage": "https://www.drupal.org/u/heddn",
+                "role": "Maintainer"
+            },
+            {
+                "name": "mikeryan",
+                "homepage": "https://www.drupal.org/user/4420"
+            }
+        ],
+        "description": "CSV source migration.",
+        "homepage": "https://www.drupal.org/project/migrate_source_csv",
+        "support": {
+            "source": "https://cgit.drupalcode.org/migrate_source_csv",
+            "issues": "https://www.drupal.org/project/issues/migrate_source_csv",
+            "irc": "irc://irc.freenode.org/drupal-migrate"
+        }
+    },
+    {
+        "name": "drupal/empty_page",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/empty_page",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/empty_page-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "f17c5cfc5d0481a9549fa9262e94a42886673708"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1505221745",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Nick Robillard",
+                "homepage": "https://www.drupal.org/user/176017"
+            },
+            {
+                "name": "NormySan",
+                "homepage": "https://www.drupal.org/user/112352"
+            },
+            {
+                "name": "bleen",
+                "homepage": "https://www.drupal.org/user/77375"
+            },
+            {
+                "name": "merauluka",
+                "homepage": "https://www.drupal.org/user/780004"
+            },
+            {
+                "name": "mukila",
+                "homepage": "https://www.drupal.org/user/3223526"
+            }
+        ],
+        "description": "A simple empty page solution. Assists in creating empty menu callbacks mostly used for pages that only consist of blocks.",
+        "homepage": "https://www.drupal.org/project/empty_page",
+        "support": {
+            "source": "http://cgit.drupalcode.org/empty_page"
+        }
+    },
+    {
+        "name": "drupal/migrate_plus",
+        "version": "4.0.0-beta2",
+        "version_normalized": "4.0.0.0-beta2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/migrate_plus",
+            "reference": "8.x-4.0-beta2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-4.0-beta2.zip",
+            "reference": "8.x-4.0-beta2",
+            "shasum": "af0f129b516fb62a58458f6e4c717310cda17986"
+        },
+        "require": {
+            "drupal/core": "^8.3"
+        },
+        "require-dev": {
+            "drupal/migrate_example_advanced_setup": "*",
+            "drupal/migrate_example_setup": "*"
+        },
+        "suggest": {
+            "ext-soap": "*",
+            "sainsburys/guzzle-oauth2-plugin": "3.0 required for the OAuth2 authentication plugin"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.0-beta2",
+                "datestamp": "1513088288",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Mike Ryan",
+                "homepage": "https://www.drupal.org/u/mikeryan",
+                "role": "Maintainer"
+            },
+            {
+                "name": "mikeryan",
+                "homepage": "https://www.drupal.org/user/4420"
+            }
+        ],
+        "description": "Enhancements to core migration support.",
+        "homepage": "https://www.drupal.org/project/migrate_plus",
+        "support": {
+            "source": "https://cgit.drupalcode.org/migrate_plus",
+            "issues": "https://www.drupal.org/project/issues/migrate_plus",
+            "irc": "irc://irc.freenode.org/drupal-migrate"
+        }
+    },
+    {
+        "name": "drupal/migrate_tools",
+        "version": "dev-4.x",
+        "version_normalized": "dev-4.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/migrate_tools",
+            "reference": "ae1b7c2a4b2895125e7e2f8f07f6ffbcaf20c418"
+        },
+        "require": {
+            "drupal/core": "^8.3",
+            "drupal/migrate_plus": "*"
+        },
+        "require-dev": {
+            "drupal/coder": "^8"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.0-beta1+5-dev",
+                "datestamp": "1510918685",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Dev releases are not covered by Drupal security advisories."
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "heddn",
+                "homepage": "https://www.drupal.org/user/1463982"
+            },
+            {
+                "name": "mikeryan",
+                "homepage": "https://www.drupal.org/user/4420"
+            },
+            {
+                "name": "moshe weitzman",
+                "homepage": "https://www.drupal.org/user/23"
+            }
+        ],
+        "description": "Tools to assist in developing and running migrations.",
+        "homepage": "http://drupal.org/project/migrate_tools",
+        "support": {
+            "source": "http://cgit.drupalcode.org/migrate_tools",
+            "issues": "http://drupal.org/project/migrate_tools",
+            "irc": "irc://irc.freenode.org/drupal-migrate"
+        }
     }
 ]
