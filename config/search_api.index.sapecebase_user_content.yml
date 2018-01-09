@@ -2,20 +2,38 @@ uuid: 1310978e-0933-4223-9330-3fe205d8f416
 langcode: en
 status: true
 dependencies:
+  module:
+    - group
+    - search_api
+    - user
   config:
     - field.storage.user.field_first_name_user
     - field.storage.user.field_last_name_user
     - field.storage.user.field_tagline_user
     - search_api.server.default_server
-  module:
-    - search_api
-    - group
-    - user
 id: sapecebase_user_content
 name: Sapecebase_user_content
 description: ''
 read_only: false
 field_settings:
+  label_1:
+    label: Title
+    datasource_id: 'entity:group'
+    property_path: label
+    type: text
+  gid:
+    label: 'Parent group'
+    datasource_id: 'entity:group_content'
+    property_path: gid
+    type: integer
+  label:
+    label: 'Parent group » Group » Title'
+    datasource_id: 'entity:group_content'
+    property_path: 'gid:entity:label'
+    type: text
+    dependencies:
+      module:
+        - group
   field_first_name_user:
     label: 'First Name'
     datasource_id: 'entity:user'
@@ -76,6 +94,8 @@ processor_settings:
   html_filter:
     all_fields: true
     fields:
+      - label_1
+      - label
       - field_first_name_user
       - field_last_name_user
       - field_tagline_user
@@ -93,6 +113,8 @@ processor_settings:
   ignorecase:
     all_fields: true
     fields:
+      - label_1
+      - label
       - field_first_name_user
       - field_last_name_user
       - field_tagline_user
@@ -103,6 +125,8 @@ processor_settings:
   tokenizer:
     all_fields: true
     fields:
+      - label_1
+      - label
       - field_first_name_user
       - field_last_name_user
       - field_tagline_user
