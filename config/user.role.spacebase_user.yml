@@ -7,8 +7,10 @@ label: 'Spacebase User'
 weight: 3
 is_admin: null
 permissions:
+  - 'access user contact forms'
   - 'create organization content'
   - 'delete organization revisions'
   - 'delete own organization content'
   - 'edit own organization content'
   - 'revert organization revisions'
+  - 'use text format basic_html'

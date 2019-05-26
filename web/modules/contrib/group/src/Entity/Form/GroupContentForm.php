@@ -109,7 +109,7 @@ class GroupContentForm extends ContentEntityForm {
 
         // Make sure we complete the wizard before saving the group content.
         $index = array_search('::save', $actions['submit']['#submit']);
-        array_splice($actions['submit']['#submit'], $index, 0, '::complete');
+        array_splice($actions['submit']['#submit'], $index, 1, '::complete');
       }
     }
 

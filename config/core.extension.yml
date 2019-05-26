@@ -27,13 +27,19 @@ module:
   image: 0
   link: 0
   menu_ui: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_source_csv: 0
+  migrate_tools: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   quickedit: 0
   rdf: 0
-  search: 0
+  search_api: 0
+  search_api_db: 0
+  search_api_db_defaults: 0
   shortcut: 0
   simple_block: 0
   system: 0
@@ -48,6 +54,7 @@ module:
   menu_link_content: 1
   pathauto: 1
   views: 10
+  empty_page: 1000
   standard: 1000
 theme:
   stable: 0

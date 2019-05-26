@@ -1,0 +1,24 @@
+uuid: 3df39c12-14aa-4964-8070-30546840bf91
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.organizations
+  module:
+    - system
+  theme:
+    - bootstrap
+id: organizations
+theme: bootstrap
+region: header
+weight: -9
+provider: null
+plugin: 'system_menu_block:organizations'
+settings:
+  id: 'system_menu_block:organizations'
+  label: Organizations
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }
